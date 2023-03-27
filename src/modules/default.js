@@ -20,7 +20,7 @@ function createProject(){
 
             prj_del.addEventListener('click',()=>{
                 prj_div.remove(document.getElementById('project'));
-                getElementById('obj1div').remove();
+                main_div.remove();
             })
         })
     }
