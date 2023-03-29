@@ -1,3 +1,4 @@
+
 class Task{
     constructor(name,duedate,description,priority){
         this.name = name;
@@ -33,6 +34,7 @@ class Task{
             add_btn.addEventListener('click', () => {
             const name = prompt('Enter The name');
             const duedate = prompt('Enter The duedate');
+            duedate.setAttribute('class','date');
             const description = prompt('Enter The description');
             const priority = prompt('Enter The priority');
             const obj1 = new Task(name, duedate, description, priority);
