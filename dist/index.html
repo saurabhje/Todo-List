@@ -13,18 +13,32 @@
         <h1>To-Do List</h1>
     </header>
     <div class="navbar">
-        <div class="tasks">
-            <h2>Today</h2>
-            <h2>Week</h2>
+        <div class="default-project-list">
+            <button class="default-project" id="home-btn">Home</button>
+            <button class="default-project" id="Today-btn">Today</button>
+            <button class="default-project" id="Today-btn">This Week</button>
         </div>
-        <div class="projects">
+        <div class="project-list">
             <h2>Projects</h2>
-            <div id="project"></div>
             <button id="add_prj">Add+</button>
+            <div id="pop-project">
+                <input id="project-name" type="text" required>
+                <button id="add-project">Add</button>
+                <button id="cancel-project">Cancel</button>
+            </div>
         </div>
     </div>
-    <div id="main">
-        <button id="add_btn"></button>
-    </div>
+    <div id="main"></div>
+    <form id="pop-form-task">
+        <input type="text" id="name" required>
+        <label for="name">Name</label>
+        <input type="text" id="description">
+        <label for="description">Description</label>
+        <input type="date" id="date" required>
+        <label for="date">Due-Date</label>   
+        <input type="radio" id="priority">
+        <label for="priority">Priority</label> 
+        <input id="submit" type="submit" value="Add">
+    </form>
 </body>
 </html>
